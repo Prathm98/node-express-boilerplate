@@ -33,7 +33,7 @@ class Server {
     this.homeController = new HomeController()
 
     this.app.use(`/`, this.homeController.router) // Configure the new routes of the controller home
-    this.app.use(`/demo`, this.demoController.router) // Configure the new routes of the controller demo
+    this.app.use(`/`, this.demoController.router) // Configure the new routes of the controller demo
   }
 
   /**

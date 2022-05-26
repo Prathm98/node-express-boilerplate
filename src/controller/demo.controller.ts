@@ -8,22 +8,22 @@ export class DemoController {
   constructor() {
     this.router = Router()
     this.routes()
-    this.list = ['Memeber1', 'Memeber1']
+    this.list = ['Ankit', 'Sanjeev', 'Keshav', 'Prathmesh']
   }
 
-  // @route     GET /demo
-  // @desc      Get demo list
+  // @route     GET /members
+  // @desc      Get members list
   // @access    Public
   public index = async (req: Request, res: Response) => {
     try {
-      res.status(200).json({ Memebers: this.list })
+      res.status(200).json({ Members: this.list })
     } catch (error) {
       console.error(error)
       res.status(500).send('Server Error')
     }
   }
 
-  // @route     POST /demo
+  // @route     POST /addmember
   // @desc      Add memeber to the list
   // @access    Public
   public addMember = async (req: Request, res: Response) => {
@@ -43,7 +43,7 @@ export class DemoController {
       // Send successful response with updated data
       res
         .status(200)
-        .json({ status: 'Successful', list: this.list, error: null })
+        .json({ status: 'Successful', Members: this.list, error: null })
     } catch (error) {
       console.error(error)
       // Send error response with old list
@@ -59,7 +59,7 @@ export class DemoController {
    * Configure the routes of controller
    */
   public routes() {
-    this.router.get('/', this.index)
-    this.router.post('/', this.addMember)
+    this.router.get('/members', this.index)
+    this.router.post('/addmember', this.addMember)
   }
 }
