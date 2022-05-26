@@ -1,0 +1,27 @@
+{
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "This is node express server boilerplate project.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prathm98/node-express-boilerplate.git"
+  },
+  "author": "Prathmesh W.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prathm98/node-express-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Prathm98/node-express-boilerplate#readme",
+  "dependencies": {
+    "config": "^3.3.7",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
