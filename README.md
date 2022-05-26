@@ -59,7 +59,7 @@ Managing apps is straightforward:
 
 ### [Config module](https://www.npmjs.com/package/config)
 
-You can store configuration secrets, passwors or keys in `config/default.json` file. Sample variables added to `config/default.json` for reference. To access any of variable across the application use below code: /
+You can store configuration secrets, passwors or keys in `config/default.json` file. Sample variables added to `config/default.json` for reference. To access any of variable across the application use below code: \
 
 `const config = require('config')` \
 `config.get('<varaible_name>')`
