@@ -11,7 +11,7 @@
 
 ## POST method demo
 
-POST method demo is available in `routes/demo.js` file as `post()` method.
+POST method demo is available in `src/controller/demo.controller.ts` file as `post()` method.
 
 ## Available Scripts
 
@@ -21,12 +21,18 @@ To start with the project, run below command to install the project:
 
 Now your application is ready to run. Run below command to run app in developement mode.
 
-### `npm run server`
+### `npm run dev`
 
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any errors in the console.
+
+## To build the application
+
+`$ npm run build`
+
+Build will be created in `build` folder.
 
 ## To deploy the application
 
@@ -40,7 +46,7 @@ Prerequisite - PM2 (Node package), docs can be found [here.](https://www.npmjs.c
 
 You can start application using below command:
 
-`$ pm2 start server.js`
+`$ pm2 start build/server.js`
 Your app is now daemonized, monitored and kept alive forever.
 
 ### Managing Applications
@@ -61,5 +67,5 @@ Managing apps is straightforward:
 
 You can store configuration secrets, passwors or keys in `config/default.json` file. Sample variables added to `config/default.json` for reference. To access any of variable across the application use below code:
 
-`const config = require('config')` \
+`import config from 'config'` \
 `config.get('<varaible_name>')`

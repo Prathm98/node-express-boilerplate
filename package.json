@@ -1,28 +1,26 @@
 {
-  "name": "express-boilerplate",
+  "name": "node-express-typescript-boilerplate",
   "version": "1.0.0",
-  "description": "This is node express server boilerplate project.",
-  "main": "server.js",
+  "description": "Node express with typescript boilerplate.",
+  "main": "index.js",
   "scripts": {
-    "start": "node server",
-    "server": "nodemon server"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Prathm98/node-express-boilerplate.git"
+    "build": "tsc ",
+    "dev": "nodemon ./src/server.ts"
   },
   "author": "Prathmesh W.",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Prathm98/node-express-boilerplate/issues"
-  },
-  "homepage": "https://github.com/Prathm98/node-express-boilerplate#readme",
   "dependencies": {
     "config": "^3.3.7",
-    "express": "^4.18.1",
-    "express-validator": "^6.14.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.16"
+    "@types/config": "0.0.41",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.35",
+    "nodemon": "^2.0.16",
+    "ts-node": "^10.8.0",
+    "typescript": "^4.7.2"
   }
 }
