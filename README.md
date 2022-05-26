@@ -26,11 +26,11 @@ Now your application is ready to run. Run below command to run app in developeme
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You may also see any errors in the console.
 
 ## To deploy the application
 
-### Prerequisite - PM2 (Node package), docs can be found [here.](https://www.npmjs.com/package/pm2)
+Prerequisite - PM2 (Node package), docs can be found [here.](https://www.npmjs.com/package/pm2)
 
 ### Installing PM2 with NPM:
 
@@ -40,7 +40,7 @@ You may also see any lint errors in the console.
 
 You can start application using below command:
 
-`$ pm2 start app.js`
+`$ pm2 start server.js`
 Your app is now daemonized, monitored and kept alive forever.
 
 ### Managing Applications
@@ -53,6 +53,6 @@ To list all running applications:
 
 Managing apps is straightforward:
 
-`$ pm2 stop <app_name>`
-`$ pm2 restart <app_name>`
+`$ pm2 stop <app_name>` \
+`$ pm2 restart <app_name>`\
 `$ pm2 delete <app_name>`
