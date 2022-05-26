@@ -56,3 +56,10 @@ Managing apps is straightforward:
 `$ pm2 stop <app_name>` \
 `$ pm2 restart <app_name>`\
 `$ pm2 delete <app_name>`
+
+### [Config module](https://www.npmjs.com/package/config)
+
+You can store configuration secrets, passwors or keys in `config/default.json` file. Sample variables added to `config/default.json` for reference. To access any of variable across the application use below code: /
+
+`const config = require('config')` \
+`config.get('<varaible_name>')`
