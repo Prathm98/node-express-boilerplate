@@ -21,7 +21,7 @@ app.get('/', (req, res) => res.status(200).json({ Status: 'Running' }))
 
 // Defining Routes
 app.use('/detail', require('./routes/details'))
-app.use('/demo', require('./routes/demo'))
+app.use('/', require('./routes/demo'))
 
 // Starts server to listen on port
 app.listen(PORT, () => console.log(`Server running on ${PORT}`))

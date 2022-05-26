@@ -2,25 +2,25 @@ const express = require('express')
 const router = express.Router()
 const { check, validationResult } = require('express-validator')
 
-const list = ['Memeber1', 'Memeber1']
+const list = ['Ankit', 'Sanjeev', 'Keshav', 'Prathmesh']
 
-// @route     GET /demo
-// @desc      Get demo list
+// @route     GET /members
+// @desc      Get members list
 // @access    Public
-router.get('/', async (req, res) => {
+router.get('/members', async (req, res) => {
   try {
-    res.json({ Memebers: list })
+    res.json({ Members: list })
   } catch (error) {
     console.error(error)
     res.status(500).send('Server Error')
   }
 })
 
-// @route     POST /demo
+// @route     POST /addmember
 // @desc      Add memeber to the list
 // @access    Public
 router.post(
-  '/',
+  '/addmember',
   [check('newmember', 'New Member is required!!!').exists()],
   async (req, res) => {
     try {
@@ -38,13 +38,13 @@ router.post(
       list.push(newmember)
 
       // Send successful response with updated data
-      res.status(200).json({ status: 'Successful', list: list, error: null })
+      res.status(200).json({ status: 'Successful', Members: list, error: null })
     } catch (error) {
       console.error(error)
       // Send error response with old list
       res
         .status(500)
-        .json({ status: 'Unsuccessful', list: list, error: 'Server Error' })
+        .json({ status: 'Unsuccessful', Members: list, error: 'Server Error' })
     }
   }
 )

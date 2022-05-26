@@ -21,7 +21,7 @@ To start with the project, run below command to install the project:
 
 Now your application is ready to run. Run below command to run app in developement mode.
 
-### `npm run server`
+### `npm run dev`
 
 Open [http://localhost:5000](http://localhost:5000) to view it in your browser.
 
