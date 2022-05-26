@@ -11,7 +11,7 @@
 
 ## POST method demo
 
-POST method demo is available in `src/controller/demo.controller.ts` file as `post()` method.
+POST method demo is available in `src/controller/demo.controller.ts` file as `addMember()` method.
 
 ## Available Scripts
 
