@@ -1,4 +1,4 @@
-# NODE JS EXPRESS Boilerplate
+# NODE TYPESCRIPT EXPRESS Boilerplate
 
 <div>
   Created by BitByBit team and maintained with ❤️ by an amazing <a href="https://www.hackerearth.com/challenges/hackathon/airbus-aerothon-40-finale/dashboard/1bfeeee/team/">team of developers</a>.
